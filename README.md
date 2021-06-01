@@ -1,5 +1,4 @@
 <h1>This is Discord Clone Project!</h1>
-Todo List: 
 
 ### Todo
 
