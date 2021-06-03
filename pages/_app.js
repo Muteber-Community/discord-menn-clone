@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import "@/styles/channels.css"
+import "@/styles/Channels/channels.css"
 
 
 function MyApp({ Component, pageProps }) {
