@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
-import styles from '../../../styles/Gridlesh.module.css';
+import styles from '@/styles/CustomContainer.module.css';
 
 const Container = ({ children, mode, ...rest }) => {
   const containerStyles = classNames({
