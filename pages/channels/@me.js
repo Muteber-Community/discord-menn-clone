@@ -1,35 +1,26 @@
-import React from 'react'
-import ChannelBar from "@/components/ChannelBar"
-import ChatSection from "@/components/ChatSection"
+import React from 'react';
+import ChatSection from '@/components/@me/ChatSection';
+import FriendsSection from '@/components/@me/FriendsSection';
+import PeopleLeft from '@/components/@me/PeopleLeft';
+import PeopleRight from '@/components/@me/PeopleRight';
+import ChannelBar from '@/components/ChannelBar';
 
 const channelsPage = () => {
-    return (
-        <div className="main">
-            <ChannelBar />
-            <div className="section-2">
-                <ChatSection />
-                <div className="lists-section">
-                    <div className="icons-section">
-                        <span>İcon</span>
-                        <span>İcon</span>
-                        <span>İcon</span>
-                        <span>İcon</span>
-                    </div>
-                    <div className="peopleList">
-                        <div className="peopleList-left">
-                            <span>kişi</span>
-                            <span>kişi</span>
-                        </div>
-                        <div className="peopleList-right">
-                            <span>aktif</span>
-                            <span>aktif</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+  return (
+    <div className='main'>
+      <ChannelBar />
+      <div className='section-2'>
+        <ChatSection />
+        <div className='lists-section'>
+          <FriendsSection />
+          <div className='peopleList'>
+            <PeopleLeft />
+            <PeopleRight />
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default channelsPage
+export default channelsPage;

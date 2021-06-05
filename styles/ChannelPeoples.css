@@ -1,0 +1,30 @@
+.peopleList-right {
+}
+
+.peopleList-channel {
+}
+.peopleList-roleTitle {
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-size: 100%;
+  color: #8e9297;
+}
+.peopleList-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  height: 42px;
+  white-space: nowrap;
+}
+
+.peopleList-image {
+  border-radius: 50%;
+}
+.peopleList-activity {
+}
+.peopleList-nameOfPeople {
+  padding: 0 8px;
+  color: rgb(148, 127, 61);
+}

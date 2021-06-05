@@ -9,7 +9,7 @@ const ChannelBar = () => {
                 </div>
             </div>
             <div className="listItem">
-                <div className="seperator"></div>
+                <div className="seperator"></div> 
             </div>
             <div aria-label="Servers">
                 <div className="listItem">
@@ -27,3 +27,4 @@ const ChannelBar = () => {
 }
 
 export default ChannelBar
+
