@@ -22,6 +22,11 @@ const ChannelBar = () => {
                     <img className="channelIcon" src="https://cdn.discordapp.com/icons/678433623266820118/be363953a60f6c52bd358a0615072940.png?size=256" alt="" width="48" height="48" aria-hidden="true"/>
                 </div>
             </div>
+            <div className="listItem">
+                <div className="channelIcon addServer">
+                    <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11.1111H12.8889V4H11.1111V11.1111H4V12.8889H11.1111V20H12.8889V12.8889H20V11.1111Z"></path></svg>
+                </div>
+            </div>
         </div>
     )
 }

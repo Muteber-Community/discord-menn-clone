@@ -33,6 +33,7 @@
     text-align: left;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    user-select: none;
 }
 .chat-section-link {
     display: flex;
@@ -44,6 +45,7 @@
     font-weight: 500;
     line-height: 20px;
     color: #8E9297;
+    user-select: none;
 }
 .chat-section-link:hover {
     background-color: #393C43;

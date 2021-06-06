@@ -1,17 +1,12 @@
 import React from 'react'
+import MiniProfile from "@/components/MiniProfile"
 
 const ChatSection = () => {
-    const testing = () => {
-        console.log("tested")
-    }
-    const testing2 = () => {
-        console.log("tested another")
-    }
     return (
         <div className="chat-section">
             <div className="chat-section-search">
                 <button type="button" className="searchButton">
-                    Sohbet bul ya da başlat
+                    Sohbet bul ya da başlat 
                 </button>             
             </div>
             <div className="chat-section-list">
@@ -35,6 +30,7 @@ const ChatSection = () => {
                     </div>
                 </a> 
             </div>
+            <MiniProfile/>
         </div>
     )
 }
