@@ -1,5 +1,5 @@
 .channelBar {
-    width: 75px;
+    width: 72px;
     background-color: #202225;
     display: flex;
     flex-direction: column;
@@ -33,9 +33,22 @@
     margin: 0 0 8px;
 }
 
+.listItem:active {
+    padding-top: 2px;
+    margin-bottom: 6px;
+}
+
 .seperator {
     height: 2px;
     width: 32px;
     border-radius: 1px;
     background-color: #2D2F32;
+}
+
+.addServer {
+    color: #3ba55c;
+}
+.addServer:hover {
+    color: white;
+    background-color: #3BA55C;
 }
