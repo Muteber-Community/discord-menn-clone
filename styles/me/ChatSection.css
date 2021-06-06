@@ -1,0 +1,58 @@
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #2f3136;
+  width: 285px;
+}
+
+.chat-section-search {
+  height: 47px;
+  box-shadow: 0px 1.5px 1px 0px #202225;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.chat-section-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchButton {
+  background-color: #202225;
+  border: none;
+  color: #72767d;
+  border-radius: 4px;
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.friendsLink {
+  display: flex;
+  border-radius: 4px;
+  padding: 11px 11px;
+  height: 42px;
+  margin: 8px 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #8e9297;
+}
+.friendsLink:hover {
+  background-color: #393c43;
+  color: #ffffff;
+}
+
+.friendsIcon {
+  display: flex;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
