@@ -31,6 +31,7 @@ const ChatSection = () => {
                 </a> 
             </div>
             <MiniProfile/>
+
         </div>
     )
 }
