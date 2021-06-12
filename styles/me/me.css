@@ -1,4 +1,4 @@
-@import './ChatSection.css';
+@import "./ChatSection.css";
 
 .main {
   display: flex;
@@ -39,12 +39,11 @@
   display: flex;
   flex-direction: column;
   background-color: #36393f;
-  width: 70%;
+  width: 100%;
 }
 .peopleList-right {
   display: flex;
   flex-direction: column;
   background-color: #36393f;
-  width: 30%;
   box-shadow: 0px 0px 1.5px 0px #56595c;
 }

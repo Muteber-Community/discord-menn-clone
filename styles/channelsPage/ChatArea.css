@@ -1,0 +1,19 @@
+.peopleList-left {
+  width: 100%;
+}
+.peoplelist-messages {
+}
+.peopleList-typeMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+  padding: 50px;
+}
+.peopleList-iconsLeft {
+  /* ADD HOVER EFFECT */
+}
+.peopleList-chatForm {
+}
+.peopleList-iconsRight {
+}
