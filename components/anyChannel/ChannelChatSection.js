@@ -1,27 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ChannelChatSection() {
+  const [menuActive, setMenuActive] = useState(false);
   const showChannelSettings = () => {
-    alert("BASTIN");
+    setMenuActive(!menuActive);
   };
 
   return (
     <div className="chat-section">
-      <div onClick={showChannelSettings} className="chat-section-search">
-        <h1 className="chatSection_channelName">Nimble Turkiye</h1>
-        <div className="chatSection_channelSettings">
+      <ul onClick={showChannelSettings} className="chat-section-search">
+        <li className="chatSection_channelName">Nimble Turkiye</li>
+        <li className="chatSection_channelSettings">
           <svg
-            width="11"
-            height="12"
-            viewBox="0 0 11 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            className={menuActive ? "bold arrowActive" : "bold arrow"}
           >
-            <path d="M10 11L5.5 6L1 11" stroke="white" stroke-width="2" />
-            <path d="M10 1L5.5 6L1 1" stroke="white" stroke-width="2" />
+            <g fill="none" fillRule="evenodd">
+              <path d="M0 0h18v18H0"></path>
+              <path
+                stroke="currentColor"
+                d="M4.5 4.5l9 9"
+                strokeLinecap="round"
+              ></path>
+              <path
+                stroke="currentColor"
+                d="M13.5 4.5l-9 9"
+                strokeLinecap="round"
+              ></path>
+            </g>
           </svg>
-        </div>
-      </div>
+          <div
+            className={
+              menuActive ? "arrowActive lowerArrowActive" : "arrow lowerArrow"
+            }
+          ></div>
+        </li>
+      </ul>
       <div className="chat-section-list">USERS OR CHAT LIST</div>
     </div>
   );
