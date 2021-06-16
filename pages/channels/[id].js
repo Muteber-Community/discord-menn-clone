@@ -15,7 +15,7 @@ function Channel({ id }) {
         <div className="lists-section">
           <ChannelInfoSection />
           <div className="peopleList">
-            <ChatArea />
+            <ChatArea id={id} />
             <ChannelPeoples />
           </div>
         </div>

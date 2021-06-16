@@ -25,24 +25,28 @@ const ChannelBar = () => {
         <div className="seperator"></div>
       </div>
       <div aria-label="Servers">
-        <Link href="/channels/231">
+        <Link href="/channels/1">
           <div className="listItem">
             <div className="channelIcon">BİHL</div>
           </div>
         </Link>
-        <div className="listItem">
-          <div className="channelIcon">GTL</div>
-        </div>
-        <div className="listItem">
-          <img
-            className="channelIcon"
-            src="https://cdn.discordapp.com/icons/678433623266820118/be363953a60f6c52bd358a0615072940.png?size=256"
-            alt=""
-            width="48"
-            height="48"
-            aria-hidden="true"
-          />
-        </div>
+        <Link href="/channels/2">
+          <div className="listItem">
+            <div className="channelIcon">GTL</div>
+          </div>
+        </Link>
+        <Link href="/channels/3">
+          <div className="listItem">
+            <img
+              className="channelIcon"
+              src="https://cdn.discordapp.com/icons/678433623266820118/be363953a60f6c52bd358a0615072940.png?size=256"
+              alt=""
+              width="48"
+              height="48"
+              aria-hidden="true"
+            />
+          </div>
+        </Link>
       </div>
       <div className="listItem">
         <div className="channelIcon addServer">
