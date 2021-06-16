@@ -1,19 +1,62 @@
 .peopleList-left {
+  display: flex;
   width: 100%;
 }
-.peoplelist-messages {
+.peopleList-chatArea {
+  display: flex;
+  width: 100%;
 }
+.peopleList-messages {
+  height: 100%;
+  padding: 30px;
+  flex-direction: column;
+  line-height: 1.375rem;
+}
+.peopleList-message {
+  word-wrap: break-word;
+  flex-direction: column;
+  margin: 10px 0 0 0;
+}
+.peopleList-messageWriter {
+  color: #f1f3f5;
+  font-weight: 600;
+}
+.peopleList-messageText {
+  color: #dcddde;
+}
+
 .peopleList-typeMessage {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 1;
-  padding: 50px;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+  background-color: rgba(79, 84, 92, 0.24);
+  color: rgb(255, 255, 255);
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;
 }
 .peopleList-iconsLeft {
   /* ADD HOVER EFFECT */
 }
-.peopleList-chatForm {
+.peopleList-iconsLeft:hover {
 }
 .peopleList-iconsRight {
+}
+.peopleList-chatForm {
+  width: 100%;
+}
+
+.chatArea-formInput {
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  padding: 0 40px 0px 30px;
+}
+
+.chatArea-formInput:focus {
+  outline: none;
 }
