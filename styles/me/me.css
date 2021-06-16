@@ -1,4 +1,6 @@
 @import "./ChatSection.css";
+@import "./FriendsSection.css";
+
 
 .main {
   display: flex;
