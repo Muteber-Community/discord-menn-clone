@@ -1,0 +1,69 @@
+.channelChatSection_channels {
+  color: rgba(79, 84, 92, 0.32);
+  padding-top: 16px;
+  margin: 0px 0 0 10px;
+}
+
+.channelChatSection_category {
+  display: flex;
+  margin-left: 0;
+  width: 100%;
+}
+.channelChatSection_category:hover .channelChatSection_channelCategory {
+  cursor: pointer;
+  color: #fff;
+}
+.channelChatSection_category:hover .channelChatSection_categoryArrow {
+  color: #fff;
+  cursor: pointer;
+}
+.channelChatSection_categoryArrow {
+  align-self: center;
+  margin-right: 5px;
+  margin-left: 0;
+  color: #b9bbbe;
+}
+.channelChatSection_channelCategory {
+  color: #b9bbbe;
+  font-size: 11px;
+  width: 100%;
+  text-transform: uppercase;
+  align-self: center;
+  cursor: pointer;
+}
+.channelChatSection_channelCategory:hover,
+.channelChatSection_channelName:hover {
+  color: #fff;
+}
+.channelChatSection_channel {
+  display: flex;
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+  height: 34px;
+  color: rgba(79, 84, 92, 0.32);
+}
+.channelChatSection_channelRooms {
+  display: flex;
+  flex-direction: column;
+}
+.channelChatSection_channel:hover {
+  background-color: rgba(79, 84, 92, 0.219);
+  width: 96%;
+  border-radius: 5px;
+}
+
+.channelChatSection_channel:hover .channelChatSection_channelName {
+  color: #fff;
+}
+.channelChatSection_channelTypeIcon {
+}
+.channelChatSection_channelName {
+  align-self: center;
+  padding: 0 8px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  color: #b9bbbe;
+}
+.channelChatSection_channelName:hover {
+}

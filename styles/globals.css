@@ -1,6 +1,5 @@
-@import './ChannelBar.css';
-@import './ChannelPeoples.css';
-@import './MiniProfile.css';
+@import "./ChannelBar.css";
+@import "./MiniProfile.css";
 
 html,
 body {

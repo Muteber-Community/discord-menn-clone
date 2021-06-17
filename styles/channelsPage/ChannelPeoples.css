@@ -1,0 +1,47 @@
+.peopleList-right {
+  width: 240px;
+  max-width: 100%;
+  padding: 25px 25px 25px 10px;
+  background-color: #2f3136;
+}
+
+.peopleList-channel {
+}
+.peopleList-roleTitle {
+  letter-spacing: 0.25px;
+  line-height: 7px;
+  text-transform: uppercase;
+  font-size: 100%;
+  color: #8e9297;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.peopleList-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  height: 42px;
+  width: 110%;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.peopleList-user:hover {
+  background-color: rgba(79, 84, 92, 0.32);
+}
+.peopleList-image {
+  border-radius: 50%;
+}
+.peopleList-activity {
+  position: absolute;
+  margin: 40px 27px 27px 28px;
+}
+.peopleList-nameOfPeople {
+  padding: 0 px;
+  margin-left: 11px;
+  color: rgb(148, 127, 61);
+}
