@@ -10,7 +10,9 @@
   height: 100%;
   padding: 30px;
   flex-direction: column;
+  max-height: 95vw;
   line-height: 1.375rem;
+  overflow-y: auto;
 }
 .peopleList-message {
   word-wrap: break-word;
@@ -31,6 +33,7 @@
   margin: 20px 20px 20px 20px;
   background-color: rgba(79, 84, 92, 0.24);
   color: rgb(255, 255, 255);
+  width: 100%;
   align-items: center;
   border-radius: 8px;
   width: 100%;
