@@ -1,64 +1,30 @@
 import React, { useState } from "react";
+import MiniProfile from "@/components/MiniProfile";
 
 function ChannelChatSection() {
-  const [channelSettingsMenuActive, setChannelSettingsMenuActive] =
-    useState(false);
-  const showChannelSettings = () => {
-    setChannelSettingsMenuActive(!channelSettingsMenuActive);
-  };
+  const [activateArrow, setActivateArrow] = useState(false)
 
+  const changeArrow = () => {
+    setActivateArrow(!activateArrow)
+  }
   return (
     <div className="chat-section">
-      <ul onClick={showChannelSettings} className="chat-section-search">
+      <ul onClick={changeArrow} className="channelChatSection_search">
         <li className="chatSection_channelName">Nimble Turkiye</li>
         <li className="chatSection_channelSettings">
-          <svg
-            width="18"
-            height="18"
-            className={
-              channelSettingsMenuActive ? "bold arrowActive" : "bold arrow"
-            }
-          >
-            <g fill="none" fillRule="evenodd">
-              <path d="M0 0h18v18H0"></path>
-              <path
-                stroke="currentColor"
-                d="M4.5 4.5l9 9"
-                strokeLinecap="round"
-              ></path>
-              <path
-                stroke="currentColor"
-                d="M13.5 4.5l-9 9"
-                strokeLinecap="round"
-              ></path>
+          <svg className={activateArrow ? "activeArrow" : "deactiveArrow"} width="18" height="18">
+            <g fill="none" fill-rule="evenodd">
+              <path stroke="currentColor" d="M4.5 4.5l9 9" stroke-linecap="round"></path>
+              <path stroke="currentColor" d="M13.5 4.5l-9 9" stroke-linecap="round"></path>
             </g>
           </svg>
-          <div
-            className={
-              channelSettingsMenuActive
-                ? "arrowActive lowerArrowActive"
-                : "arrow lowerArrow"
-            }
-          ></div>
         </li>
       </ul>
       <div className="channelChatSection_channels">
         <div className="channelChatSection_category">
-          <svg
-            className="channelChatSection_categoryArrow"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="currentColor"
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M16.59 8.59004L12 13.17L7.41 8.59004L6 10L12 16L18 10L16.59 8.59004Z"
-            ></path>
-          </svg>
+          <svg className="channelChatSection_categoryArrow" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" clipRule="evenodd" d="M16.59 8.59004L12 13.17L7.41 8.59004L6 10L12 16L18 10L16.59 8.59004Z"></path></svg>
           <div className="channelChatSection_channelCategory">
-            METİN KANALLARI
+            STATS
           </div>
         </div>
         <div className="channelChatSection_channel">
@@ -76,6 +42,7 @@ function ChannelChatSection() {
             ></path>
           </svg>
           <div className="channelChatSection_channelName">senseii-chat</div>
+          <svg className="channelChatSection_createInviteButton" viewBox="0 0 16 16"><path fill="currentColor" d="M14 2H16V3H14V5H13V3H11V2H13V0H14V2Z"></path><path fill="currentColor" d="M6.5 8.00667C7.88 8.00667 9 6.88667 9 5.50667C9 4.12667 7.88 3.00667 6.5 3.00667C5.12 3.00667 4 4.12667 4 5.50667C4 6.88667 5.12 8.00667 6.5 8.00667Z"></path><path fill="currentColor" d="M6.5 8.34C3.26 8.34 1 9.98666 1 12.34V13.0067H12V12.34C12 9.98 9.74 8.34 6.5 8.34Z"></path></svg>
         </div>
         <div className="channelChatSection_channelRooms">
           <div className="channelChatSection_channel">
@@ -209,6 +176,7 @@ function ChannelChatSection() {
           </div>
         </div>
       </div>
+      <MiniProfile />
     </div>
   );
 }

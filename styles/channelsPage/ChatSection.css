@@ -22,58 +22,6 @@
   color: white;
 }
 
-.chatSection_channelName {
-  stroke-width: 2px;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 600;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-  margin: 20px;
-  user-select: none;
-}
-
-.chatSection_channelSettings {
-  margin: 10px 10px 10px 10px;
-}
-
-.chatSection_channelSettings path {
-  stroke-width: 2px;
-}
-
-.lowerArrow {
-  height: 10px;
-  width: 20px;
-  position: absolute;
-  bottom: 14.55px;
-  background-color: #2f3136;
-  transition: 0;
-  transition-delay: 100ms;
-}
-.chat-section-search:hover .lowerArrow {
-  transition-delay: 0ms;
-}
-
-.chat-section-search:hover {
-  background-color: rgba(79, 84, 92, 0.219);
-}
-
-.lowerArrowActive {
-  visibility: hidden;
-  transition: 0;
-}
-
-.arrow {
-  transition: 200ms;
-}
-
-.arrowActive {
-  transform: rotateZ(-90deg);
-  transition: 200ms;
-}
-
 .bold {
   font-weight: bold;
 }

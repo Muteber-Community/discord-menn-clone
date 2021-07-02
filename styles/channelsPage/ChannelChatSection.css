@@ -1,45 +1,49 @@
 .channelChatSection_channels {
   color: rgba(79, 84, 92, 0.32);
   padding-top: 16px;
-  margin: 0px 0 0 10px;
+  margin: 0px 0 0 4px;
+  user-select: none;
 }
 
 .channelChatSection_category {
   display: flex;
-  margin-left: 0;
+  align-items: center;
   width: 100%;
+  height:24px;
+  padding-left: -10px;
 }
 .channelChatSection_category:hover .channelChatSection_channelCategory {
   cursor: pointer;
-  color: #fff;
+  color: #DCDDDE;
 }
 .channelChatSection_category:hover .channelChatSection_categoryArrow {
-  color: #fff;
+  color: #DCDDDE;
   cursor: pointer;
 }
 .channelChatSection_categoryArrow {
-  align-self: center;
-  margin-right: 5px;
-  margin-left: 0;
-  color: #b9bbbe;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+  color: #8e9297;
 }
 .channelChatSection_channelCategory {
-  color: #b9bbbe;
-  font-size: 11px;
+  color: #8e9297;
+  font-size: 12px;
+  line-height:16px;
+  font-weight: 600;
   width: 100%;
   text-transform: uppercase;
   align-self: center;
   cursor: pointer;
 }
-.channelChatSection_channelCategory:hover,
-.channelChatSection_channelName:hover {
-  color: #fff;
-}
+
 .channelChatSection_channel {
+  position: relative;
   display: flex;
-  margin: 0px 5px 0px 5px;
+  padding: 0 8px;
+  border-radius: 4px;
   cursor: pointer;
-  height: 34px;
+  align-items: center;
   color: rgba(79, 84, 92, 0.32);
 }
 .channelChatSection_channelRooms {
@@ -52,18 +56,91 @@
   border-radius: 5px;
 }
 
-.channelChatSection_channel:hover .channelChatSection_channelName {
-  color: #fff;
-}
-.channelChatSection_channelTypeIcon {
-}
 .channelChatSection_channelName {
   align-self: center;
   padding: 0 8px;
   width: 100%;
   font-size: 16px;
   cursor: pointer;
+  color: #8e9297;
+}
+.channelChatSection_channel:hover .channelChatSection_channelName {
+  color: #DCDDDE;
+}
+
+.channelChatSection_createInviteButton {
+  visibility: hidden;
   color: #b9bbbe;
+  height: 20px;
+  width: 20px;
 }
-.channelChatSection_channelName:hover {
+
+.channelChatSection_createInviteButton:hover {
+  color: #D8D9DA;
 }
+
+.channelChatSection_channel:hover .channelChatSection_createInviteButton {
+  visibility: visible;
+}
+
+.chatSection_channelName {
+  stroke-width: 2px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+  margin: 20px;
+  user-select: none;
+}
+
+.chatSection_channelSettings {
+  margin: 10px 10px 10px 10px;
+}
+
+.chatSection_channelSettings path {
+  stroke-width: 2px;
+  color: #D6D7D8;
+  transition: 0.2s ;
+}
+
+.deactiveArrow path {
+  stroke-dasharray: 7;
+  stroke-dashoffset: 1;
+}
+.activeArrow path {
+  stroke-dasharray: 14;
+}
+
+.activeArrow {
+  transform: rotateZ(-90deg);
+  transition: 0.2s;
+}
+
+.deactiveArrow {
+  transition: 0.2s;
+}
+
+.channelChatSection_search {
+  cursor: pointer;
+  height: 48px;
+  box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
+    0 2px 0 rgba(4, 4, 5, 0.05);
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0;
+  flex: 0 0 auto;
+  color: white;
+}
+
+.channelChatSection_search:hover {
+  background-color: rgba(79, 84, 92, 0.219);
+  transition: 200ms;
+}
+

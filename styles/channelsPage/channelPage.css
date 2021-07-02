@@ -16,8 +16,7 @@ html {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 92.2%;
-  overflow: hidden;
+  height: 100%;
 }
 
 /* @media screen and (max-width: 992px) {
