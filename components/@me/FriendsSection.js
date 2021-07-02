@@ -45,6 +45,7 @@ function FriendsSection() {
         <div className="messageIcon"> 
           <svg
             className="toolbar-icon"
+
             x="0"
             y="0"
             width="24"

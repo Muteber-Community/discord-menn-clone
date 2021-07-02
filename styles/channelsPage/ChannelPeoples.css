@@ -1,8 +1,10 @@
 .peopleList-right {
+  display: flex;
+  flex: 0 0 auto;
   width: 240px;
-  max-width: 100%;
-  padding: 25px 25px 25px 10px;
+  padding: 0 0 20px;
   background-color: #2f3136;
+  height: auto;
 }
 
 .peopleList-channel {

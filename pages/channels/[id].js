@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ChannelChatSection from "@/components/anyChannel/ChannelChatSection";
 import ChannelInfoSection from "@/components/anyChannel/ChannelInfoSection";
 import ChatArea from "@/components/anyChannel/ChatArea";
