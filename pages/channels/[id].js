@@ -7,6 +7,21 @@ import ChannelBar from "@/components/ChannelBar";
 import LayerContainers from "@/components/anyChannel/LayerContainers";
 
 function Channel({ id }) {
+  const [isSmallerThanHundred, setIsSmallerThanHundred] = useState(false);
+  useEffect(() => {
+    const px_ratio =
+      window.devicePixelRatio ||
+      window.screen.availWidth / document.documentElement.clientWidth;
+    if (px_ratio < 1.0) {
+      console.log("aga bak", px_ratio);
+
+      setIsSmallerThanHundred(false);
+    } else {
+      console.log(isSmallerThanHundred);
+      setIsSmallerThanHundred(true);
+      return isSmallerThanHundred;
+    }
+  });
   return (
     <div className="main">
       <ChannelBar />
@@ -14,7 +29,9 @@ function Channel({ id }) {
         <ChannelChatSection />
         <div className="lists-section">
           <ChannelInfoSection />
-          <div className="peopleList">
+          <div
+            className={isSmallerThanHundred ? "peopleListSmall" : "peopleList"}
+          >
             <ChatArea id={id} />
             <ChannelPeoples />
           </div>
