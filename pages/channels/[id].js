@@ -13,11 +13,8 @@ function Channel({ id }) {
       window.devicePixelRatio ||
       window.screen.availWidth / document.documentElement.clientWidth;
     if (px_ratio < 1.0) {
-      console.log("aga bak", px_ratio);
-
       setIsSmallerThanHundred(false);
     } else {
-      console.log(isSmallerThanHundred);
       setIsSmallerThanHundred(true);
       return isSmallerThanHundred;
     }

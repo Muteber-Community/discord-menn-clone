@@ -42,7 +42,7 @@ const ChatSection = () => {
               <foreignObject x="0" y="0" width="32" height="32">
                 <img
                   className="avatar-img"
-                  src="https://cdn.discordapp.com/avatars/364095318658121729/e8368fbf421cab741cf07ef5ec298eb2.png?size=256"
+                  src="https://cdn.discordapp.com/avatars/364095318658121729/64c9b3a2111c69340537515f04613322.png?size=256"
                 />
               </foreignObject>
               <svg width="16" height="16" viewBox="0 0 23 23" x="19" y="19">

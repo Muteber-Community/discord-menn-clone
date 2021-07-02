@@ -4,7 +4,7 @@ const MiniProfile = () => {
     return (
         <div className="profile-panel">
             <div className="panel-avatar">
-                <svg width="32" height="32" viewBox="0 0 32 32"><foreignObject x="0" y="0" width="32" height="32"><img className="avatar-img" src="https://cdn.discordapp.com/avatars/364095318658121729/e8368fbf421cab741cf07ef5ec298eb2.png?size=256"/></foreignObject><svg width='16' height='16' viewBox='0 0 23 23' x="19" y="19"><circle cx='11.5' cy='11.5' r='11.5' fill='#2F3136'/></svg><svg  width='10' height='10' viewBox='0 0 23 23' x="22" y="22"><circle cx='11.5' cy='11.5' r='11.5' fill='#399F58'/></svg></svg>
+                <svg width="32" height="32" viewBox="0 0 32 32"><foreignObject x="0" y="0" width="32" height="32"><img className="avatar-img" src="https://cdn.discordapp.com/avatars/364095318658121729/64c9b3a2111c69340537515f04613322.png?size=256"/></foreignObject><svg width='16' height='16' viewBox='0 0 23 23' x="19" y="19"><circle cx='11.5' cy='11.5' r='11.5' fill='#2F3136'/></svg><svg  width='10' height='10' viewBox='0 0 23 23' x="22" y="22"><circle cx='11.5' cy='11.5' r='11.5' fill='#399F58'/></svg></svg>
             </div>
             <div className="panel-username">
                 <div style={{lineHeight: "18px"}}>mehmetnail0</div>
