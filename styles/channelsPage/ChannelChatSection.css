@@ -84,7 +84,6 @@
 }
 
 .chatSection_channelName {
-  stroke-width: 2px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 600;
@@ -92,12 +91,12 @@
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
-  margin: 20px;
   user-select: none;
 }
 
 .chatSection_channelSettings {
-  margin: 10px 10px 10px 10px;
+  position: relative;
+  top: 3px;
 }
 
 .chatSection_channelSettings path {
@@ -133,7 +132,7 @@
   list-style: none;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 16px;
   margin: 0;
   flex: 0 0 auto;
   color: white;

@@ -30,6 +30,7 @@
 .panel-avatar {
   margin-right: 8px;
   cursor: pointer;
+  user-select: none;
 }
 .panel-avatar:hover {
   opacity: 0.7;
