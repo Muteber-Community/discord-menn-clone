@@ -1,0 +1,44 @@
+.peopleList-right-me-body{
+    
+}
+.peopleList-right-me-title{
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 8px 0 16px;
+    font-weight: 700;
+    cursor: default;
+    user-select: none;
+}
+.peopleList-right-me-active_friends{
+    background-color: #2F3136;
+    padding: 16px;
+    border-radius: 8px;
+}
+.peopleList-right-me-person{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.peopleList-right-me-no_active_friends{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+.peopleList-right-me-no_active_friends span {
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+.peopleList-right-me-no_active_friends p {
+    color: #b9bbbe;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}

@@ -1,0 +1,90 @@
+.peopleList-left-me-body{
+    padding-bottom: 8px;
+    margin-top: 8px;
+    overflow: hidden scroll;
+}
+
+.peopleList-left-me-title {
+    margin: 16px 20px 8px 30px;
+    color: #b9bbbe;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.25;
+    font-weight: 600;
+    flex: 1 1 auto;
+}
+
+.peopleList-left-me-persons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.peopleList-left-me-person{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 62px;
+    border-top: 1px solid hsla(0,0%,100%,0.06);
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.peopleList-left-me-person:hover{
+    background-color: #393C43;
+    box-shadow: none;
+    border-radius: 8px;
+    border-color: transparent;
+    margin: 0 10px 0 20px;
+    padding: 16px 10px;
+}
+.peopleList-left-me-person:hover + a{
+    border-color: transparent;
+}
+.peopleList-left-me-person:hover .peopleList-left-me-icon {
+    background-color: #202225;
+}
+.peopleList-left-me-person:hover .peopleList-left-me-person_id {
+    visibility: initial;
+}
+
+.peopleList-left-me-person_username{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+}
+
+.peopleList-left-me-person_status{
+    font-size: 14px;
+    color: #b9bbbe;
+    line-height: 20px;
+}
+.peopleList-left-me-icons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+.peopleList-left-me-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F3136;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #b9bbbe;
+}
+.peopleList-left-me-icon:hover svg{
+    color: #DCDDDE;
+}
+.peopleList-left-me-person_id{
+    color: #b9bbbe;
+    font-size: 14px;
+    line-height: 16px;
+    visibility: hidden;
+    font-weight: 400;
+}
