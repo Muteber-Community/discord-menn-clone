@@ -1,0 +1,47 @@
+.infoSection_roomBracket {
+}
+.infoSection_roomName {
+  margin-left: 8px;
+  font-weight: bold;
+  color: white;
+}
+.infoSection_toolBar {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.infoSection_searchInChannel {
+  cursor: pointer;
+  height: 48px;
+  box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
+    0 2px 0 rgba(4, 4, 5, 0.05);
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 10px;
+  flex: 0 0 auto;
+  color: white;
+}
+.infoSection_toolIcons {
+  margin: 0 4px;
+}
+.infoSection_notificationIcon {
+  margin: 0 8px;
+}
+.infoSection_fastenerIcon {
+  margin: 0 8px;
+}
+.infoSection_peoplesIcon {
+  margin: 0 8px;
+}
+.infoSection_messagesComeIcon {
+  margin: 0 8px;
+}
+.infoSection_infoIcon {
+  margin: 0 8px;
+}

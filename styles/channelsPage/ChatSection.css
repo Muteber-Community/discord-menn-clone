@@ -6,6 +6,7 @@
   flex: 0 0 auto;
 }
 .channelChatSection_channelItems {
+  height: 924px;
   overflow: auto;
 }
 
