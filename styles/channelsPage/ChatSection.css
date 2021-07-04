@@ -6,6 +6,9 @@
   flex: 0 0 auto;
   position: relative;
 }
+.channelChatSection_channelItems {
+  overflow: auto;
+}
 
 .chat-section-search {
   cursor: pointer;
@@ -47,7 +50,7 @@
   font-weight: 500;
   text-align: left;
   cursor: pointer;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   user-select: none;
 }
 .chat-section-link {
@@ -79,7 +82,7 @@
   height: 40px;
   padding: 18px 8px 4px 11px;
   margin-bottom: -6px !important;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .directMessage:hover {
@@ -117,7 +120,7 @@
 .private-chat-username {
   font-weight: 500;
   font-size: 16px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
 }
 
