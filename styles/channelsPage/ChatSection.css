@@ -4,6 +4,7 @@
   background-color: #2f3136;
   width: 240px;
   flex: 0 0 auto;
+  position: relative;
 }
 
 .chat-section-search {

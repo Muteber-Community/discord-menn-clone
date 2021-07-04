@@ -6,7 +6,7 @@
   font-weight: 500;
   align-items: center;
   padding: 0 8px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 240px;
   color: white;

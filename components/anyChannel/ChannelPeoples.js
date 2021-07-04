@@ -2,7 +2,7 @@ import React from "react";
 
 function ChannelPeoples() {
   return (
-    <div className="peopleList-right">
+    <div className="channelPage-peopleList-right">
       <div className="peopleList-channel">
         <p className="peopleList-roleTitle">Admin</p>
         <div className="peopleList-user">
