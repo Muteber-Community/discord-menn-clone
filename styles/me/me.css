@@ -16,32 +16,35 @@
   flex-direction: row;
   align-items: stretch;
   width: 100%;
+  min-width: 0;
 }
 
 .lists-section {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 .peopleList {
   position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 100%; 
   background-color: #36393f;
+  user-select: none;
 }
 .peopleList-left {
   display: flex;
   flex-direction: column;
   background-color: #36393f;
-  width: 70%;
+  width: 100%;
 }
 .peopleList-right {
   display: flex;
   flex-direction: column;
   background-color: #36393f;
-  width: 30%;
+  width: 100%;
   box-shadow: 0px 0px 1.5px 0px #56595c;
 }
 .peopleList-left-me {
@@ -50,6 +53,7 @@
   background-color: #36393f;
   width: 100%;
   flex: 1 1 auto;
+  position: relative;
 }
 .peopleList-right-me {
   display: flex;

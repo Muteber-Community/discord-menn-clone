@@ -2,13 +2,13 @@ import React from 'react';
 
 function ChannelPeoples() {
   return (
-    <div className='peopleList-right'>
-      <div className='peopleList-channel'>
-        <p className='peopleList-roleTitle'>Admin</p>
-        <div className='peopleList-user'>
-          <div className='private-chat-avatar'>
-            <svg width='32' height='32' viewBox='0 0 32 32'>
-              <foreignObject x='0' y='0' width='32' height='32'>
+    <div className="channelPage-peopleList-right">
+      <div className="peopleList-channel">
+        <p className="peopleList-roleTitle">Admin</p>
+        <div className="peopleList-user">
+          <div className="private-chat-avatar">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+              <foreignObject x="0" y="0" width="32" height="32">
                 <img
                   className='avatar-img'
                   src='https://cdn.discordapp.com/avatars/364095318658121729/64c9b3a2111c69340537515f04613322.png?size=256'
