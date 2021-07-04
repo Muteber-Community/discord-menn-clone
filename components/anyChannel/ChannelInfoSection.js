@@ -129,6 +129,7 @@ function ChannelInfoSection() {
       </div>
 
       <div className='infoSection_searchInChannel'></div>
+
     </div>
   );
 }

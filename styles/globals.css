@@ -19,15 +19,3 @@ a {
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #202225;
-  border-radius: 2;
-}
