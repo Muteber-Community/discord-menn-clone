@@ -11,6 +11,8 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
+  background: #2F3136;
+  min-height: 0;
 }
 .peopleListSmall {
   display: flex;
@@ -18,6 +20,8 @@ html {
   width: 100%;
   height: 100%;
   position: relative;
+  background: #2F3136;
+  min-height: 0;
 }
 
 /* @media screen and (max-width: 992px) {
