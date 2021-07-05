@@ -1,0 +1,63 @@
+.channelBar {
+  width: 72px;
+  background-color: #202225;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  overflow: hidden;
+  overflow-y: scroll;
+  flex: 1 0 auto;
+}
+
+.channelBar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.channelIcon {
+  color: #dcddde;
+  background-color: #36393f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  width: 48px;
+  height: 48px;
+  transition: 0.2s ease-out;
+}
+
+.channelIcon:hover {
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  background-color: #5865f2;
+  color: white;
+}
+
+.listItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 8px;
+  user-select: none;
+}
+
+.listItem:active {
+  padding-top: 2px;
+  margin-bottom: 6px;
+}
+
+.seperator {
+  height: 2px;
+  width: 32px;
+  border-radius: 1px;
+  background-color: #2d2f32;
+}
+
+.addServer {
+  color: #3ba55c;
+}
+.addServer:hover {
+  color: white;
+  background-color: #3ba55c;
+}
+
