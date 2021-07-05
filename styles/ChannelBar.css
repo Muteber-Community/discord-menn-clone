@@ -4,9 +4,13 @@
   display: flex;
   flex-direction: column;
   padding: 12px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
   flex: 1 0 auto;
+}
+
+.channelBar::-webkit-scrollbar {
+  width: 0px;
 }
 
 .channelIcon {
@@ -56,3 +60,4 @@
   color: white;
   background-color: #3ba55c;
 }
+

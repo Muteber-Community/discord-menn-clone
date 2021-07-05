@@ -36,7 +36,7 @@ const ChatSection = () => {
             </svg>
           </div>
         </div>
-        <a className="chat-section-link private-chat" href="/channels/@me">
+        <a className="chat-section-link private-chat" href="/channels/@me/916732686686">
           <div className="private-chat-avatar">
             <svg width="32" height="32" viewBox="0 0 32 32">
               <foreignObject x="0" y="0" width="32" height="32">

@@ -1,7 +1,34 @@
+.channelChatSection_body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden hidden;
+}
+
+.channelChatSection_body::-webkit-scrollbar {
+  width: 8px;
+  
+}
+.channelChatSection_body::-webkit-scrollbar-track {
+  background: #2F3136;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+.channelChatSection_body::-webkit-scrollbar-thumb{
+  background: #202225;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.channelChatSection_body:hover{
+  overflow-y: auto ;
+}
+
 .channelChatSection_channels {
   color: rgba(79, 84, 92, 0.32);
-  padding-top: 16px;
-  margin: 0px 0 0 4px;
+  padding: 16px 8px 0 8px;
   user-select: none;
 }
 
@@ -10,7 +37,7 @@
   align-items: center;
   width: 100%;
   height:24px;
-  padding-left: -10px;
+  padding-right: 4px;
 }
 .channelChatSection_category:hover .channelChatSection_channelCategory {
   cursor: pointer;
@@ -52,7 +79,6 @@
 }
 .channelChatSection_channel:hover {
   background-color: rgba(79, 84, 92, 0.219);
-  width: 96%;
   border-radius: 5px;
 }
 
@@ -143,3 +169,7 @@
   transition: 200ms;
 }
 
+.channelChatSection_channelItems {
+  height: 924px;
+  overflow: auto;
+}

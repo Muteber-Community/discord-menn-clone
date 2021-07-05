@@ -6,11 +6,10 @@
   font-weight: 500;
   align-items: center;
   padding: 0 8px;
-  position: absolute;
-  bottom: 0;
   width: 240px;
   color: white;
   justify-items: center;
+  flex-shrink: 0;
 }
 .panel-username {
   display: flex;
