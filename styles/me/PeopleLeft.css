@@ -39,6 +39,7 @@
     border-color: transparent;
     margin: 0 10px 0 20px;
     padding: 16px 10px;
+    z-index: 2;
 }
 .peopleList-left-me-person:hover + a{
     border-color: transparent;
@@ -75,10 +76,11 @@
 .peopleList-left-me-icons{
     display: flex;
     flex-direction: row;
-    height: 100%;
     align-items: center;
     background-color: #36393F;
     flex: 1 1 auto;
+    justify-content: flex-end;
+    height: 100%;
 }
 
 .peopleList-left-me-person:hover .peopleList-left-me-icons {
