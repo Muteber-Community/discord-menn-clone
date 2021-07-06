@@ -4,89 +4,68 @@ function ChatArea({ id }) {
   return (
     <div className="chatArea_body">
       <div className="chatArea_innerBody">
-        <div className="chatArea-messages"> 
-          {/* {id} */}
-          <div className="chatArea-message">
-            <div>
-              <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
+        <div className="chatArea-messagesBody">
+          <div className="chatArea-messages">
+            <div className="chatArea-messages-userInfo">
+              <div>
+                <img className="chatArea-message-userInfo-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
+              </div>
+              <h2 className="chatArea-message-userInfo-username">ahmet_yasin</h2>
+              <div className="chatArea-message-userInfo-description">Bu <strong>@ahmet_yasin</strong> kullanıcısıyla olan direkt mesaj geçmişinin başlangıcıdır.</div>
             </div>
-            <div className="chatArea-messageContent">
-              <span className="chatArea-messageWriter">Mehmet Nail</span>
-              <div className="chatArea-messageText">
-                Aslında Full Stack dediği için normal gibi duruyor abi. Tabi iki
-                farklı dil olduğu iöin bu kadar fazla. Ama absürt değil bence
-                istekler :sweat_smile: bi de hepsini bilmek gerekmiyordur. Beşte
-                üçü/dördü yeterli olur muhtemelen :slight_smile:
+            
+            <div className="chatArea-userMessages">
+              <div className="chatArea-message">
+                <div>
+                  <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
+                </div>
+                <div className="chatArea-messageContent">
+                  <span className="chatArea-messageWriter">Mehmet Nail</span>
+                  <div className="chatArea-messageText">
+                    Selamun aleyküm
+                  </div>
+                </div>
+              </div>
+              <div className="chatArea-message">
+                <div className="chatArea-messageText chatArea-additional_messageText">
+                  Naber
+                </div>
               </div>
             </div>
-          </div>
-          <div className="chatArea-message">
-            <div>
-              <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
-            </div>
-            <div className="chatArea-messageContent">
-              <div className="chatArea-messageWriter"><span>Ahmet Yasin</span></div>
-              <div className="chatArea-messageText">
-                Aslında Full Stack dediği için normal gibi duruyor abi. Tabi iki
-                farklı dil olduğu iöin bu kadar fazla. Ama absürt değil bence
-                istekler :sweat_smile: bi de hepsini bilmek gerekmiyordur. Beşte
-                üçü/dördü yeterli olur muhtemelen :slight_smile:
+            <div className="chatArea-userMessages">
+              <div className="chatArea-message">
+                <div>
+                  <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
+                </div>
+                <div className="chatArea-messageContent">
+                  <span className="chatArea-messageWriter">Ahmet Yasin</span>
+                  <div className="chatArea-messageText">
+                    aleyküm selam
+                  </div>
+                </div>
+              </div>
+              <div className="chatArea-message">
+                <div className="chatArea-messageText chatArea-additional_messageText">
+                  iyidir sen
+                </div>
               </div>
             </div>
-          </div>
-          <div className="chatArea-message">
-            <div>
-              <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
-            </div>
-            <div className="chatArea-messageContent">
-              <div className="chatArea-messageWriter"><span>Ahmet Yasin</span></div>
-              <div className="chatArea-messageText">
-                Aslında Full Stack dediği için normal gibi duruyor abi. Tabi iki
-                farklı dil olduğu iöin bu kadar fazla. Ama absürt değil bence
-                istekler :sweat_smile: bi de hepsini bilmek gerekmiyordur. Beşte
-                üçü/dördü yeterli olur muhtemelen :slight_smile:
+            <div className="chatArea-userMessages">
+              <div className="chatArea-message">
+                <div>
+                  <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
+                </div>
+                <div className="chatArea-messageContent">
+                  <span className="chatArea-messageWriter">Mehmet Nail</span>
+                  <div className="chatArea-messageText">
+                    bende iyi işte nolsun
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="chatArea-message">
-            <div>
-              <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
-            </div>
-            <div className="chatArea-messageContent">
-              <div className="chatArea-messageWriter"><span>Ahmet Yasin</span></div>
-              <div className="chatArea-messageText">
-                Aslında Full Stack dediği için normal gibi duruyor abi. Tabi iki
-                farklı dil olduğu iöin bu kadar fazla. Ama absürt değil bence
-                istekler :sweat_smile: bi de hepsini bilmek gerekmiyordur. Beşte
-                üçü/dördü yeterli olur muhtemelen :slight_smile:
-              </div>
-            </div>
-          </div>
-          <div className="chatArea-message">
-            <div>
-              <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
-            </div>
-            <div className="chatArea-messageContent">
-              <div className="chatArea-messageWriter"><span>Ahmet Yasin</span></div>
-              <div className="chatArea-messageText">
-                Aslında Full Stack dediği için normal gibi duruyor abi. Tabi iki
-                farklı dil olduğu iöin bu kadar fazla. Ama absürt değil bence
-                istekler :sweat_smile: bi de hepsini bilmek gerekmiyordur. Beşte
-                üçü/dördü yeterli olur muhtemelen :slight_smile:
-              </div>
-            </div>
-          </div>
-          <div className="chatArea-message">
-            <div>
-              <img className="chatArea-message-avatar_img" src="https://discord.com/assets/c09a43a372ba81e3018c3151d4ed4773.png"/>
-            </div>
-            <div className="chatArea-messageContent">
-              <div className="chatArea-messageWriter"><span>Ahmet Yasin</span></div>
-              <div className="chatArea-messageText">
-                Aslında Full Stack dediği için normal gibi duruyor abi. Tabi iki
-                farklı dil olduğu iöin bu kadar fazla. Ama absürt değil bence
-                istekler :sweat_smile: bi de hepsini bilmek gerekmiyordur. Beşte
-                üçü/dördü yeterli olur muhtemelen :slight_smile:
+              <div className="chatArea-message">
+                <div className="chatArea-messageText chatArea-additional_messageText">
+                  napıyorsun
+                </div>
               </div>
             </div>
           </div>
