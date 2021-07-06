@@ -1,4 +1,4 @@
-.channelChatSection_channels {
+.channelChatSection_channelItem {
   color: rgba(79, 84, 92, 0.32);
   padding-top: 16px;
   margin: 0px 0 0 4px;
@@ -20,11 +20,18 @@
   color: #dcddde;
   cursor: pointer;
 }
-.channelChatSection_categoryArrow {
+.channelChatSection_categoryArrow_shows
+  .channelChatSection_categoryArrow_hides {
   margin-right: 3px;
-  width: 12px;
-  height: 12px;
+}
+.channelChatSection_categoryArrow_shows {
   color: #8e9297;
+  transition: 0.2s;
+}
+.channelChatSection_categoryArrow_hides {
+  color: #8e9297;
+  transform: rotateZ(-90deg);
+  transition: 0.2s;
 }
 .channelChatSection_channelCategory {
   color: #8e9297;
@@ -46,6 +53,7 @@
   align-items: center;
   color: rgba(79, 84, 92, 0.32);
 }
+
 .channelChatSection_channelRooms {
   display: flex;
   flex-direction: column;
