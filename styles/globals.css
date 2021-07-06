@@ -1,6 +1,6 @@
-@import "./ChannelBar.css";
-@import "./MiniProfile.css";
-
+@import './ChannelBar.css';
+@import './MiniProfile.css';
+@import './Modals.css';
 html,
 body {
   line-height: 1;
@@ -17,6 +17,20 @@ a {
 
 * {
   box-sizing: border-box;
-  outline: 0;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202225;
+  border-radius: 2;
+}
+.hide {
+  display: none;
+}
