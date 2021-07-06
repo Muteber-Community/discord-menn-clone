@@ -1,14 +1,9 @@
-.peopleList-right-me-body{
-    
-}
 .peopleList-right-me-title{
     color: white;
     font-size: 20px;
     line-height: 24px;
     margin: 8px 0 16px;
     font-weight: 700;
-    cursor: default;
-    user-select: none;
 }
 .peopleList-right-me-active_friends{
     background-color: #2F3136;

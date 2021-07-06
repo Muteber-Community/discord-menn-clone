@@ -19,6 +19,7 @@ a {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -34,3 +35,5 @@ a {
 .hide {
   display: none;
 }
+=======
+>>>>>>> 2542e7962e1193de59552d6aa2392138ad878c65
