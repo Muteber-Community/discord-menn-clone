@@ -4,7 +4,7 @@
 .channelSettingsModal_items {
   display: flex;
   flex-direction: column;
-  background-color: #18191C;
+  background-color: #18191c;
   z-index: 9;
   color: #b9bbbe;
   position: absolute;
@@ -52,18 +52,46 @@
   align-items: center;
 }
 
-.channelSettingsModal_seperator{
+.channelSettingsModal_seperator {
   margin: 2px 4px;
-  border-bottom: 1px solid hsla(0,0%,100%,0.06);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.06);
 }
 
-.channelSettingsModal_leaveChannel{
-  color: #ED4245;
+.channelSettingsModal_leaveChannel {
+  color: #ed4245;
 }
-.channelSettingsModal_leaveChannel:hover{
-  background-color: #ED4245 !important ;
+.channelSettingsModal_leaveChannel:hover {
+  background-color: #ed4245 !important ;
 }
 
 .channelSettingsModal_invitePeople {
-  color: #949CF7;
+  color: #949cf7;
+}
+
+/* 
+
+
+
+*/
+
+.addChannelModal {
+  position: absolute;
+  z-index: 11;
+  top: 30%;
+  right: 30%;
+  left: 30%;
+  background-color: white;
+  padding: 30px;
+  width: 450px;
+  border-radius: 20px;
+}
+.addChannelModal_closeButton {
+}
+.addChannelModal_iWillCreateChannel {
+}
+.addChannelModal_iWillCreateChannel_logo {
+}
+.addChannelModal_iWillCreateChannel_title {
+}
+.addChannelModal_iWillCreateChannel_arrow {
 }
