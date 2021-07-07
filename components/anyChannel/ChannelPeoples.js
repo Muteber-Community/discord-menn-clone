@@ -1,7 +1,8 @@
 import React from 'react';
 
-function ChannelPeoples() {
+function ChannelPeoples({display}) {
   return (
+    display ?
     <div className='channelPage-peopleList-right'>
       <div className='channelPage_channelUsers'>
         <div className='channelPage_userGroup'>
@@ -156,6 +157,7 @@ function ChannelPeoples() {
         </div>
       </div>
     </div>
+    : ""
   );
 }
 

@@ -48,8 +48,8 @@ function ChannelChatSection() {
             <svg
               className={
                 toggleChannelCategory
-                  ? 'channelChatSection_categoryArrow_shows'
-                  : 'channelChatSection_categoryArrow_hides'
+                  ? 'channelChatSection_categoryArrow channelChatSection_categoryArrow_shows'
+                  : 'channelChatSection_categoryArrow channelChatSection_categoryArrow_hides'
               }
               width='24'
               height='24'

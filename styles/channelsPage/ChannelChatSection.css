@@ -37,30 +37,24 @@
   width: 100%;
   height: 24px;
   padding-right: 4px;
-}
-.channelChatSection_category:hover .channelChatSection_channelCategory {
-  cursor: pointer;
-  color: #dcddde;
-}
-.channelChatSection_category:hover .channelChatSection_categoryArrow {
-  color: #dcddde;
-  cursor: pointer;
-}
-.channelChatSection_categoryArrow_shows
-  .channelChatSection_categoryArrow_hides {
-  margin-right: 3px;
-}
-.channelChatSection_categoryArrow_shows {
   color: #8e9297;
-  transition: 0.2s;
 }
+.channelChatSection_category:hover {
+  cursor: pointer;
+  color: #dcddde;
+}
+
+.channelChatSection_categoryArrow{
+  width: 12px;
+  height: 12px;
+  transition: 0.2s;
+  transition-property: transform;
+}
+
 .channelChatSection_categoryArrow_hides {
-  color: #8e9297;
   transform: rotateZ(-90deg);
-  transition: 0.2s;
 }
 .channelChatSection_channelCategory {
-  color: #8e9297;
   font-size: 12px;
   line-height: 16px;
   font-weight: 600;

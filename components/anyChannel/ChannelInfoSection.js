@@ -1,6 +1,14 @@
 import React from 'react';
 
-function ChannelInfoSection() {
+function ChannelInfoSection({setDisplay, display}) {
+  const displayComponent = (e) => {
+    if (display == true) {
+      e.target.className.baseVal = "infoSection_icon_active"
+    } else {
+      e.target.className.baseVal = "infoSection_icon"
+    }
+    setDisplay(!display)
+  }
   return (
     <div className='icons-section'>
       <div className='infoSection-channel_info'>
@@ -27,20 +35,9 @@ function ChannelInfoSection() {
             width='24'
             height='24'
             viewBox='0 0 24 24'
-            fill='#b9bbbe'
+            fill='currentColor'
           >
             <path d='M18 9V14C18 15.657 19.344 17 21 17V18H3V17C4.656 17 6 15.657 6 14V9C6 5.686 8.686 3 12 3C15.314 3 18 5.686 18 9ZM11.9999 21C10.5239 21 9.24793 20.19 8.55493 19H15.4449C14.7519 20.19 13.4759 21 11.9999 21Z'></path>
-          </svg>
-          <svg
-            x='0'
-            y='0'
-            className='infoSection_icon '
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-            fill='#b9bbbe'
-          >
-            <path d='M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88001L5.73596 8.46501L4.32196 9.88001L8.56496 14.122L2.90796 19.778L4.32196 21.192L9.97896 15.536L14.222 19.778L15.636 18.364L14.222 16.95L19.171 12H19.172L20.586 13.414L22 12Z'></path>
           </svg>
           <svg
             x='0'
@@ -49,7 +46,19 @@ function ChannelInfoSection() {
             width='24'
             height='24'
             viewBox='0 0 24 24'
-            fill='#b9bbbe'
+            fill='currentColor'
+          >
+            <path d='M22 12L12.101 2.10101L10.686 3.51401L12.101 4.92901L7.15096 9.87801V9.88001L5.73596 8.46501L4.32196 9.88001L8.56496 14.122L2.90796 19.778L4.32196 21.192L9.97896 15.536L14.222 19.778L15.636 18.364L14.222 16.95L19.171 12H19.172L20.586 13.414L22 12Z'></path>
+          </svg>
+          <svg
+            onClick={e => displayComponent(e)}
+            x='0'
+            y='0'
+            className='infoSection_icon'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='currentColor'
           >
             <path d='M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z'></path>
             <path d='M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z'></path>
