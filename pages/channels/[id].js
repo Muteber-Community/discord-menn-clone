@@ -7,30 +7,17 @@ import ChannelBar from "@/components/ChannelBar";
 import LayerContainers from "@/components/anyChannel/LayerContainers";
 
 function Channel({ id }) {
-  const [isSmallerThanHundred, setIsSmallerThanHundred] = useState(false);
-  useEffect(() => {
-    const px_ratio =
-      window.devicePixelRatio ||
-      window.screen.availWidth / document.documentElement.clientWidth;
-    if (px_ratio < 1.0) {
-      setIsSmallerThanHundred(false);
-    } else {
-      setIsSmallerThanHundred(true);
-      return isSmallerThanHundred;
-    }
-  });
+  const [display, setDisplay] = useState(true)
   return (
     <div className="main">
       <ChannelBar />
       <div className="section-2">
         <ChannelChatSection />
         <div className="lists-section">
-          <ChannelInfoSection />
-          <div
-            className={isSmallerThanHundred ? "peopleListSmall" : "peopleList"}
-          >
+          <ChannelInfoSection setDisplay={setDisplay} display={display} />
+          <div className="peopleList">
             <ChatArea id={id} />
-            <ChannelPeoples />
+            <ChannelPeoples display={display} />
           </div>
         </div>
       </div>

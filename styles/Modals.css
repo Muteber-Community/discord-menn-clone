@@ -1,0 +1,69 @@
+.channelSettingsModal {
+  position: relative;
+}
+.channelSettingsModal_items {
+  display: flex;
+  flex-direction: column;
+  background-color: #18191C;
+  z-index: 9;
+  color: #b9bbbe;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 220px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 6px 8px;
+  user-select: none;
+}
+/* .channelSettingsModal_items:nth-last-child() {
+  color: red;
+} */
+.channelSettingsModal_items p {
+  cursor: pointer;
+  width: 170px;
+  height: 12px;
+}
+
+.channelSettingsModal_items ul:hover {
+  background-color: #4752c4;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.channelSettingsModal_items svg {
+  display: flex;
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+.channelSettingsModal_items ul {
+  margin: 2px 0;
+  padding: 6px 8px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+.channelSettingsModal_items li {
+  display: flex;
+  align-items: center;
+}
+
+.channelSettingsModal_seperator{
+  margin: 2px 4px;
+  border-bottom: 1px solid hsla(0,0%,100%,0.06);
+}
+
+.channelSettingsModal_leaveChannel{
+  color: #ED4245;
+}
+.channelSettingsModal_leaveChannel:hover{
+  background-color: #ED4245 !important ;
+}
+
+.channelSettingsModal_invitePeople {
+  color: #949CF7;
+}
