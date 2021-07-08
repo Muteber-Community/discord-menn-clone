@@ -1,15 +1,11 @@
-export default function ChannelSettingsModal() {
+ChannelSettingsModal = () => {
   return (
     <div className='channelSettingsModal'>
       <div className='channelSettingsModal_items'>
-        <ul className="channelSettingsModal_invitePeople">
+        <ul className='channelSettingsModal_invitePeople'>
           <li>
             <p>İnsanları Davet Et</p>
-            <svg
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-            >
+            <svg width='24' height='24' viewBox='0 0 24 24'>
               <path
                 fill='currentColor'
                 fillRule='evenodd'
@@ -19,16 +15,11 @@ export default function ChannelSettingsModal() {
             </svg>
           </li>
         </ul>
-        <div className="channelSettingsModal_seperator"></div>
+        <div className='channelSettingsModal_seperator'></div>
         <ul>
           <li>
             <p>Bildirim Ayarları</p>
-            <svg
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-              fill='none'
-            >
+            <svg width='24' height='24' viewBox='0 0 24 24' fill='none'>
               <path
                 fill='currentColor'
                 fillRule='evenodd'
@@ -38,13 +29,11 @@ export default function ChannelSettingsModal() {
             </svg>
           </li>
         </ul>
-        <div className="channelSettingsModal_seperator"></div>
+        <div className='channelSettingsModal_seperator'></div>
         <ul>
           <li>
             <p>Kullanıcı Adı Değiştir</p>
-            <svg
-              viewBox='0 0 24 24'
-            >
+            <svg viewBox='0 0 24 24'>
               <path
                 fillRule='evenodd'
                 clipRule='evenodd'
@@ -58,11 +47,7 @@ export default function ChannelSettingsModal() {
           <li>
             <p>Sust. Kanalları Gizle</p>
             <div>
-              <svg
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-              >
+              <svg width='24' height='24' viewBox='0 0 24 24'>
                 <path
                   fillRule='evenodd'
                   clipRule='evenodd'
@@ -78,15 +63,11 @@ export default function ChannelSettingsModal() {
             </div>
           </li>
         </ul>
-        <div className="channelSettingsModal_seperator"></div>
-        <ul className="channelSettingsModal_leaveChannel">
+        <div className='channelSettingsModal_seperator'></div>
+        <ul className='channelSettingsModal_leaveChannel'>
           <li>
             <p>Sunucudan Ayrıl</p>
-            <svg
-              width='18'
-              height='18'
-              viewBox='0 0 24 24'
-            >
+            <svg width='18' height='18' viewBox='0 0 24 24'>
               <path
                 fill='currentColor'
                 d='M10.418 13L12.708 15.294L11.292 16.706L6.586 11.991L11.294 7.292L12.707 8.708L10.41 11H21.949C21.446 5.955 17.177 2 12 2C6.486 2 2 6.487 2 12C2 17.513 6.486 22 12 22C17.177 22 21.446 18.046 21.949 13H10.418Z'
@@ -97,4 +78,31 @@ export default function ChannelSettingsModal() {
       </div>
     </div>
   );
-}
+};
+
+AddChannelModal = () => {
+  return (
+    <>
+      <div className='addChannelModal'>
+        <h2>Bir Sunucu Oluştur</h2>
+        <span className='addChannelModal_closeButton'></span>
+        <p>
+          Sunucun, arkadaşlarınla takıldığınız yerdir. Kendi sunucunu oluştur ve
+          konuşmaya başla
+        </p>
+        <div className='addChannelModal_iWillCreateChannel'>
+          <div className='addChannelModal_iWillCreateChannel_logo'></div>
+          <div className='addChannelModal_iWillCreateChannel_title'>
+            Kendim Oluşturayım
+          </div>
+          <div className='addChannelModal_iWillCreateChannel_arrow'>></div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+module.exports = {
+  ChannelSettingsModal,
+  AddChannelModal,
+};
