@@ -64,7 +64,7 @@ const ChannelBar = () => {
           </svg>
         </div>
       </div>
-      {isAddServerModalActive ? <AddChannelModal /> : ''}
+      {isAddServerModalActive ? <AddChannelModal addServerHandler={addServerHandler} /> : ''}
     </div>
   );
 };
