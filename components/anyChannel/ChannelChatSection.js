@@ -38,7 +38,11 @@ function ChannelChatSection() {
         </li>
       </ul>
       {/* Channel Settings Modal*/}
-      {activateArrow ? <ChannelSettingsModal /> : ''}
+      {activateArrow ? (
+        <ChannelSettingsModal channelArrowHandler={channelArrowHandler} />
+      ) : (
+        ''
+      )}
       <div className='channelChatSection_channels'>
         <div className='channelChatSection_channelItem'>
           <div
