@@ -86,21 +86,20 @@
     user-select: none;
     margin-bottom: auto;
     transform: translate3d(0px, -50%, 0px) scale(1, 1);
-    overflow: scroll;
     animation: opening 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transition: 250ms;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
   
   .addChannelModal_body {
     position: absolute;
-    left: auto;
-    right: auto;
     min-width: 440px;
   }
   
   .addChannelModal::-webkit-scrollbar {
-    width: 0px;
-    height: 0;
+    width: 6px;
+    height: 6px;
     visibility: hidden;
   }
   
@@ -110,7 +109,6 @@
     padding: 24px 16px 0;
     justify-content: flex-start;
     flex: 0 0 auto;
-    overflow: auto;
   }
   
   .addChannelModal_upper h2 {
@@ -126,6 +124,7 @@
     line-height: 20px;
     color: #4f5660;
     font-size: 15px;
+    opacity: 0.9;
   }
   
   .addChannelModal_content {
@@ -250,6 +249,7 @@
     font-size: 14px;
     line-height: 18px;
     color: #4f5660;
+    opacity: 0.9;
   }
   .addChannelModal_2_contentText a{
     color: hsl(212,calc(var(--saturation-factor, 1)*100%),43.9%);
@@ -301,22 +301,86 @@
   .right_slide_reverse_animation {
     animation: right_slide_reverse 250ms;
   }
-  @keyframes height_increase_animation {
-    0% {height: 391px}
-    100% {height: 557px}
-  }
-  @keyframes height_decrease_animation {
-    0% {height: 557px}
-    100% {height: 391px}
-  }
 
-  .height_increase_animation {
-    animation: left_slide_reverse 250ms;
-  }
-  .height_decrease_animation {
-    animation: right_slide_reverse 250ms;
-  }
-  
   #display_none {
     display: none;
   }
+
+  .opacity_065 {
+    opacity: 0.65;
+  }
+
+  .addChannelModal_3 {
+    height: 404px;
+  }
+
+  .addChannelModal_3_lower{
+    flex-direction: row;
+  }
+
+  .addChannelModal_3_uploadImage{
+    display: flex;
+    justify-content: center;
+    margin-right: 4px;
+  }
+
+  .addChannelModal_3_uploadInput{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  .addChannelModal_3_serverName{
+    color: #6A7480;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .addChannelModal_3_serverNameInput{
+    height: 40px;
+    color: #2e3338;
+    border: 1px solid rgba(79, 84, 92, 0.3);
+    border-radius: 4px;
+    transition: 350ms;
+    outline: 0;
+    opacity: 0.9;
+    padding: 0 12px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    
+  }
+  .addChannelModal_3_serverNameInput:focus{
+    border-color: hsl(212,calc(1*100%),43.9%);
+  }
+
+  .addChannelModal_3_description{
+    font-size: 11px;
+    margin: 10px 0 16px 0;
+    opacity: 0.85;
+    color: #747F8D;
+  }
+
+  .addChannelModal_3_create{
+    display: flex;
+    justify-content: center;
+    padding: 10px 8px;
+    background: #5865F2;
+    margin-left: auto;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 96px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    transition: 250ms;
+  }
+  .addChannelModal_3_create:hover{
+    background-color: hsl(235,calc(1*51.4%),52.4%);; 
+  }
+
+  
