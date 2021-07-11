@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MiniProfile from '@/components/MiniProfile';
-import { ChannelSettingsModal } from '@/components/Modals';
+import ChannelSettingsModal from '@/components/Modals/ChannelSettingsModal';
 
 function ChannelChatSection() {
   const [activateArrow, setActivateArrow] = useState(false);
@@ -38,7 +38,11 @@ function ChannelChatSection() {
         </li>
       </ul>
       {/* Channel Settings Modal*/}
-      {activateArrow ? <ChannelSettingsModal /> : ''}
+      {activateArrow ? (
+        <ChannelSettingsModal channelArrowHandler={channelArrowHandler} />
+      ) : (
+        ''
+      )}
       <div className='channelChatSection_channels'>
         <div className='channelChatSection_channelItem'>
           <div

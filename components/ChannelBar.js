@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { AddChannelModal } from '@/components/Modals';
+import AddChannelModal from '@/components/Modals/AddChannelModal';
 
 const ChannelBar = () => {
   const [isAddServerModalActive, setIsAddServerModalActive] = useState(false);
   const addServerHandler = () => {
     setIsAddServerModalActive(!isAddServerModalActive);
   };
-
+  
   return (
     <div className='channelBar'>
       <div className='listItem'>
@@ -64,7 +64,12 @@ const ChannelBar = () => {
           </svg>
         </div>
       </div>
-      {isAddServerModalActive ? <AddChannelModal addServerHandler={addServerHandler} /> : ''}
+
+      {isAddServerModalActive ? (
+        <AddChannelModal addServerHandler={addServerHandler} />
+      ) : (
+        ''
+      )}
     </div>
   );
 };

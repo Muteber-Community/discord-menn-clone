@@ -1,6 +1,6 @@
 @import './ChannelBar.css';
 @import './MiniProfile.css';
-@import './Modals.css';
+@import './Modals/Modals.css';
 html,
 body {
   line-height: 1;
