@@ -1,0 +1,154 @@
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #2f3136;
+  width: 240px;
+  flex: 0 0 auto;
+  z-index: 1;
+  min-height: 0;
+}
+
+.chat-section-search {
+  height: 48px;
+  box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
+    0 2px 0 rgba(4, 4, 5, 0.05);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  flex: 0 0 auto;
+}
+.chat-section-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden hidden;
+  justify-items: center;
+  padding-bottom: 8px;
+}
+
+.chat-section-list::-webkit-scrollbar {
+  width: 8px;
+  
+}
+.chat-section-list::-webkit-scrollbar-track {
+  background: #2F3136;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+.chat-section-list::-webkit-scrollbar-thumb{
+  background: #202225;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.chat-section-list:hover{
+  overflow-y: auto ;
+}
+
+.searchButton {
+  background-color: #202225;
+  border: none;
+  color: #72767d;
+  border-radius: 4px;
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  user-select: none;
+}
+.chat-section-link {
+  display: flex;
+  border-radius: 4px;
+  padding: 11px 11px;
+  height: 45px;
+  margin: 8px 8px 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #8e9297;
+  user-select: none;
+}
+.chat-section-link:hover {
+  background-color: #393c43;
+  color: #dcddde;
+}
+.friendsIcon {
+  display: flex;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.directMessage {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 18px 8px 4px 11px;
+  margin-bottom: -6px !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.directMessage:hover {
+  background-color: #2f3136;
+}
+
+.directMessageText {
+  width: 100%;
+  pointer-events: none;
+  font-size: 12px;
+}
+.directMessageIcon {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.chat-section-link:hover .directMessageIcon {
+  color: #8e9297;
+}
+
+.chat-section-link:hover .directMessageIcon:hover {
+  color: #dcddde;
+}
+
+.private-chat {
+  align-items: center;
+}
+
+.private-chat-avatar {
+  margin-right: 12px;
+}
+.private-chat-username {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+}
+
+.avatar-img {
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.private-chat-closeButton {
+  margin-left: auto;
+  display: none;
+}
+
+.chat-section-link:hover .private-chat-closeButton {
+  display: flex;
+  align-items: center;
+  color: #8e9297;
+}
+
+.chat-section-link:hover .private-chat-closeButton:hover {
+  color: #dcddde;
+}

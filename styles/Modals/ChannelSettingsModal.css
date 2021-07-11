@@ -1,0 +1,91 @@
+.channelSettingsModal {
+    position: relative;
+  }
+  .channelSettingsModal_items {
+    display: flex;
+    flex-direction: column;
+    background-color: #18191c;
+    z-index: 9;
+    color: #b9bbbe;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 220px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 6px 8px;
+    user-select: none;
+  }
+  /* .channelSettingsModal_items:nth-last-child() {
+    color: red;
+  } */
+  .channelSettingsModal_items p {
+    cursor: pointer;
+    width: 170px;
+    height: 12px;
+  }
+  
+  .channelSettingsModal_items ul:hover {
+    background-color: #4752c4;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .channelSettingsModal_items svg {
+    display: flex;
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+  .channelSettingsModal_items ul {
+    margin: 2px 0;
+    padding: 6px 8px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 32px;
+  }
+  .channelSettingsModal_items li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .channelSettingsModal_seperator {
+    margin: 2px 4px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.06);
+  }
+  
+  .channelSettingsModal_leaveChannel {
+    color: #ed4245;
+  }
+  .channelSettingsModal_leaveChannel:hover {
+    background-color: #ed4245 !important ;
+  }
+  
+  .channelSettingsModal_invitePeople {
+    color: #949cf7;
+  }
+  .channelSettingsModal_layer {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+  }
+  .channelSettingsModal_background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.85;
+    z-index: 99;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /*aga -li deger verebiliyon marginle ver hatta da bune aw o zaman iki kez tiklaman gerekiyor*/
+  }

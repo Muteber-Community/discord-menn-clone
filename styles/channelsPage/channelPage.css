@@ -1,0 +1,42 @@
+@import url("./ChannelPeoples.css");
+@import url("./ChannelInfoSection.css");
+@import url("./ChannelChatSection.css");
+@import url("./ChatArea.css");
+
+html {
+}
+.peopleList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #2F3136;
+  min-height: 0;
+}
+.peopleListSmall {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #2F3136;
+  min-height: 0;
+}
+
+/* @media screen and (max-width: 992px) {
+  .peopleList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 92.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .peopleList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 92.5%;
+  }
+} */

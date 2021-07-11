@@ -1,0 +1,133 @@
+.peopleList-left-me-body{
+    margin: 8px 0px 4px 0;
+    padding-bottom: 72px;
+    height: 100%;
+    min-width: 0;
+    overflow: hidden scroll;
+}
+
+.peopleList-left-me-title {
+    margin: 16px 0px 8px 30px;
+    color: #b9bbbe;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.25;
+    font-weight: 600;
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.peopleList-left-me-persons{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+.peopleList-left-me-person{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 62px;
+    border-top: 1px solid hsla(0,0%,100%,0.06);
+    margin-left: 30px;
+    margin-right: 20px;
+    min-width: 0;
+}
+.peopleList-left-me-person:hover{
+    background-color: #393C43;
+    box-shadow: none;
+    border-radius: 8px;
+    border-color: transparent;
+    margin: 0 10px 0 20px;
+    padding: 16px 10px;
+    z-index: 2;
+}
+.peopleList-left-me-person:hover + a{
+    border-color: transparent;
+}
+
+.peopleList-left-me-person:hover .peopleList-left-me-person_id {
+    visibility: initial;
+}
+
+.peopleList-left-me-person_profile{
+    display: flex;
+    min-width: 0;
+    width: 100%;
+}
+
+.peopleList-left-me-person-avatar{
+    margin-right: 12px;
+}
+
+.peopleList-left-me-person_username{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 600;
+    align-items: baseline;
+}
+
+.peopleList-left-me-person_status{
+    font-size: 14px;
+    color: #b9bbbe;
+    line-height: 20px;
+}
+
+.peopleList-left-me-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #36393F;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.peopleList-left-me-person:hover .peopleList-left-me-icons {
+    background-color: #393C43;
+}
+
+.peopleList-left-me-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F3136;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #b9bbbe;
+}
+
+.peopleList-left-me-person:hover .peopleList-left-me-icon {
+    background-color: #202225;
+}
+
+.peopleList-left-me-icon:hover svg{
+    color: #DCDDDE;
+}
+.peopleList-left-me-person_id{
+    color: #b9bbbe;
+    font-size: 14px;
+    line-height: 16px;
+    visibility: hidden;
+    font-weight: 400;
+}
+
+.peopleList-left-me-body::-webkit-scrollbar {
+    width: 16px;
+}
+.peopleList-left-me-body::-webkit-scrollbar-track, .peopleList-left-me-body::-webkit-scrollbar-thumb {
+    background: #2e3338;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+}
+
+.cleaner {
+    width: 20px;
+    height: 100%;
+    background-color: #36393F;
+    position: absolute;
+    right: 16px;
+}
