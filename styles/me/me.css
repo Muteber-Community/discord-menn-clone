@@ -64,7 +64,6 @@
   border-left: 1px solid hsla(0,0%,100%,0.06);
   flex: 0 1 30%;
   padding: 16px 8px 16px 16px;
-  margin-left: 2px;
 }
 
 @media (max-width: 1200px) {

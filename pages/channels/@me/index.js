@@ -1,16 +1,12 @@
 import React from 'react';
-import ChatSection from '@/components/@me/ChatSection';
 import FriendsSection from '@/components/@me/FriendsSection';
 import PeopleLeft from '@/components/@me/PeopleLeft';
 import PeopleRight from '@/components/@me/PeopleRight';
-import ChannelBar from '@/components/ChannelBar';
+import Layout_me from '@/components/@me/Layout_me';
 
 const channelsPage = () => {
   return (
-    <div className='main'>
-      <ChannelBar />
-      <div className='section-2'>
-        <ChatSection />
+      <Layout_me>
         <div className='lists-section'>
           <FriendsSection />
           <div className='peopleList'>
@@ -18,8 +14,7 @@ const channelsPage = () => {
             <PeopleRight />
           </div>
         </div>
-      </div>
-    </div>
+      </Layout_me>
   );
 };
 

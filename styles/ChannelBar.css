@@ -23,27 +23,43 @@
   width: 48px;
   height: 48px;
   transition: 0.2s ease-out;
+  cursor: pointer;
 }
 
 .channelIcon:hover {
   border-radius: 1rem;
-  cursor: pointer;
-  transition: 0.2s ease-out;
   background-color: #5865f2;
   color: white;
+}
+
+.channelIcon_active {
+  color: white;
+  background-color: #5865f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
 }
 
 .listItem {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 8px;
   user-select: none;
 }
 
-.listItem:active {
-  padding-top: 2px;
-  margin-bottom: 6px;
+.channelIcon_effect {
+  padding-bottom: 8px;
+}
+.channelIcon_effect:hover {
+  padding-bottom: 8px;
+}
+.channelIcon_effect:active {
+  padding-top: 1px;
+  padding-bottom: 7px;
 }
 
 .seperator {
@@ -51,13 +67,44 @@
   width: 32px;
   border-radius: 1px;
   background-color: #2d2f32;
+  margin: 0 0 8px;
 }
 
-.addServer {
+#addServer {
   color: #3ba55c;
 }
-.addServer:hover {
+#addServer_active {
+  color: white;
+  background-color: #3ba55c;
+}
+#addServer:hover {
   color: white;
   background-color: #3ba55c;
 }
 
+.listItem-left {
+  position: absolute;
+  left: -4px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  transition: 200ms;
+}
+
+.listItem:hover .listItem-left {
+  width: 8px;
+  height: 20px;
+}
+
+.listItem-left_active {
+  position: absolute;
+  left: -4px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  width: 8px;
+  height: 40px;
+  background-color: white;
+  transition: 200ms;
+}
