@@ -23,10 +23,9 @@
   width: 48px;
   height: 48px;
   transition: 0.2s ease-out;
-  cursor: pointer;
 }
 
-.channelIcon:hover {
+.channelIcon_effect:hover .channelIcon {
   border-radius: 1rem;
   background-color: #5865f2;
   color: white;
@@ -49,17 +48,18 @@
   justify-content: center;
   align-items: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .channelIcon_effect {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .channelIcon_effect:hover {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .channelIcon_effect:active {
-  padding-top: 1px;
-  padding-bottom: 7px;
+  margin-top: 1px;
+  margin-bottom: 7px;
 }
 
 .seperator {

@@ -3,18 +3,20 @@ import PrivateChatInfoSection from "@/components/@me/privateChat/PrivateChatInfo
 import ChatArea from "@/components/anyChannel/ChatArea";
 import LayerContainers from "@/components/anyChannel/LayerContainers";
 import Layout_me from '@/components/@me/Layout_me';
+import ChatSection from '@/components/@me/ChatSection';
 
 
-function Channel({ id }) {
+function Channel({ id }) { 
   return (
-      <Layout_me>
+    <div className="section-2">
+      <ChatSection />
         <div className="lists-section">
           <PrivateChatInfoSection />
           <div className="peopleList">
             <ChatArea id={id} />
           </div>
         </div>
-      </Layout_me>
+      </div>
   );
 }
 

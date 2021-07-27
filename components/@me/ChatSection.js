@@ -68,6 +68,35 @@ const ChatSection = () => {
             </div>
           </a>
         </Link>
+        <Link href="/channels/@me/916732686687">
+          <a className="chat-section-link private-chat">
+            <div className="private-chat-avatar">
+              <svg width="32" height="32" viewBox="0 0 32 32">
+                <foreignObject x="0" y="0" width="32" height="32">
+                  <img
+                    className="avatar-img"
+                    src="https://cdn.discordapp.com/avatars/364095318658121729/64c9b3a2111c69340537515f04613322.png?size=256"
+                  />
+                </foreignObject>
+                <svg width="16" height="16" viewBox="0 0 23 23" x="19" y="19">
+                  <circle cx="11.5" cy="11.5" r="11.5" fill="#2F3136" />
+                </svg>
+                <svg width="10" height="10" viewBox="0 0 23 23" x="22" y="22">
+                  <circle cx="11.5" cy="11.5" r="11.5" fill="#399F58" />
+                </svg>
+              </svg>
+            </div>
+            <div className="private-chat-username">ahmet_yasin</div>
+            <div className="private-chat-closeButton">
+              <svg width="16" height="16" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z"
+                ></path>
+              </svg>
+            </div>
+          </a>
+        </Link>
       </div>
       <MiniProfile />
     </div>
