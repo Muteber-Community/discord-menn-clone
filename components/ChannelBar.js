@@ -9,40 +9,12 @@ const ChannelBar = () => {
   const addServerHandler = (e) => {
     setIsAddServerModalActive(!isAddServerModalActive);
   };
-  const selectActiveServer = (e, path) => {
-    sessionStorage.setItem("activeChannel",e?.currentTarget.id)
-    if (document.getElementsByClassName("listItem-left_active")[0] && document.getElementsByClassName("channelIcon_active")[0]) {
-      document.getElementsByClassName("listItem-left_active")[0].className = "listItem-left"
-      document.getElementsByClassName("channelIcon_active")[0].className = "channelIcon"
-    }
-    if (e?.currentTarget) {
-      e.currentTarget.parentElement.parentElement.children[1].className = "listItem-left_active"
-      e.currentTarget.className = "channelIcon_active"
-    }
-    if (path) {
-      router.push(path)
-    }
-  }
-
-  useEffect(() => {
-    if (!sessionStorage.getItem("activeChannel")) {
-      sessionStorage.setItem("activeChannel", "channelBar_homepage")
-    }
-    if (document.getElementsByClassName("listItem-left_active")[0] && document.getElementsByClassName("channelIcon_active")[0]) {
-      document.getElementsByClassName("listItem-left_active")[0].className = "listItem-left"
-      document.getElementsByClassName("channelIcon_active")[0].className = "channelIcon"
-    }
-    if (sessionStorage.getItem("activeChannel")) {
-      const activeChannel = sessionStorage.getItem("activeChannel")
-      document.getElementById(activeChannel).className = "channelIcon_active"
-      document.getElementById(activeChannel).parentElement.parentElement.children[1].className = "listItem-left_active"
-    }
-  })
   return (
     <div className='channelBar'>
         <div className='listItem'>
           <div className="channelIcon_effect">
-              <div onClick={e => selectActiveServer(e, '/channels/@me')} className='channelIcon' id='channelBar_homepage'>
+            <Link href='/channels/@me'>
+              <div className={router.pathname == "/channels/@me" ? "channelIcon_active" : "channelIcon"}>
                 <svg
                   style={{ display: 'flex', justifyContent: 'center'}}
                   width='28'
@@ -55,8 +27,9 @@ const ChannelBar = () => {
                   ></path>
                 </svg>
               </div>
+            </Link>
           </div>
-          <div className="listItem-left"/>
+          <div className={router.pathname == "/channels/@me" ? "listItem-left_active" : "listItem-left"}/>
         </div>
 
       <div className='listItem'>
@@ -66,26 +39,24 @@ const ChannelBar = () => {
         <div className='listItem'>
           <div className="channelIcon_effect">
             <Link href='/channels/1'>
-              <div onClick={e => selectActiveServer(e)} className='channelIcon' id="channelBar_channel_1">BİHL</div>
+              <div className={router.asPath == "/channels/1" ? "channelIcon_active" : "channelIcon"}>BİHL</div>
             </Link>
-
           </div>
-          <div className="listItem-left"/>
+          <div className={router.asPath == "/channels/1" ? "listItem-left_active" : "listItem-left"}/>
         </div>
         <div className='listItem'>
           <div className="channelIcon_effect">
             <Link href='/channels/2'>
-              <div onClick={e => selectActiveServer(e)} className='channelIcon' id="channelBar_channel_2">BİHL</div>
+              <div className={router.asPath == "/channels/2" ? "channelIcon_active" : "channelIcon"}>BİHL</div>
             </Link>
           </div>
-          <div className="listItem-left"/>
+          <div className={router.asPath == "/channels/2" ? "listItem-left_active" : "listItem-left"}/>
         </div>
         <div className='listItem'>
           <div className="channelIcon_effect">
             <Link href='/channels/3'>
               <img
-                onClick={e => selectActiveServer(e)}
-                className='channelIcon'
+                className={router.asPath == "/channels/3" ? "channelIcon_active" : "channelIcon"}
                 id="channelBar_channel_3"
                 src='https://cdn.discordapp.com/icons/678433623266820118/be363953a60f6c52bd358a0615072940.png?size=256'
                 alt=''
@@ -95,7 +66,7 @@ const ChannelBar = () => {
               />
             </Link>
           </div>
-          <div className="listItem-left"/>
+          <div className={router.asPath == "/channels/3" ? "listItem-left_active" : "listItem-left"}/>
         </div>
       </div>
       <div className='listItem'>
