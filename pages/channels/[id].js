@@ -6,7 +6,7 @@ import ChannelPeoples from "@/components/anyChannel/ChannelPeoples";
 import LayerContainers from "@/components/anyChannel/LayerContainers";
 
 function Channel({ id }) {
-  const [display, setDisplay] = useState(true)
+  const [display, setDisplay] = useState(false)
   return (
       <div className="section-2">
         <ChannelChatSection />

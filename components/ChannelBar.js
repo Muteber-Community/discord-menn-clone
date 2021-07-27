@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import AddChannelModal from '@/components/Modals/AddChannelModal';
+import {useRouter} from "next/router"
 
 const ChannelBar = () => {
+  const router = useRouter()
   const [isAddServerModalActive, setIsAddServerModalActive] = useState(false);
   const addServerHandler = (e) => {
     setIsAddServerModalActive(!isAddServerModalActive);
   };
-  const selectActiveServer = (e) => {
-    localStorage.setItem("activeChannel",e?.currentTarget.id)
+  const selectActiveServer = (e, path) => {
+    sessionStorage.setItem("activeChannel",e?.currentTarget.id)
     if (document.getElementsByClassName("listItem-left_active")[0] && document.getElementsByClassName("channelIcon_active")[0]) {
       document.getElementsByClassName("listItem-left_active")[0].className = "listItem-left"
       document.getElementsByClassName("channelIcon_active")[0].className = "channelIcon"
@@ -17,25 +19,30 @@ const ChannelBar = () => {
       e.currentTarget.parentElement.parentElement.children[1].className = "listItem-left_active"
       e.currentTarget.className = "channelIcon_active"
     }
+    if (path) {
+      router.push(path)
+    }
   }
 
   useEffect(() => {
+    if (!sessionStorage.getItem("activeChannel")) {
+      sessionStorage.setItem("activeChannel", "channelBar_homepage")
+    }
     if (document.getElementsByClassName("listItem-left_active")[0] && document.getElementsByClassName("channelIcon_active")[0]) {
       document.getElementsByClassName("listItem-left_active")[0].className = "listItem-left"
       document.getElementsByClassName("channelIcon_active")[0].className = "channelIcon"
     }
-    if (localStorage.getItem("activeChannel")) {
-      const activeChannel = localStorage.getItem("activeChannel")
+    if (sessionStorage.getItem("activeChannel")) {
+      const activeChannel = sessionStorage.getItem("activeChannel")
       document.getElementById(activeChannel).className = "channelIcon_active"
       document.getElementById(activeChannel).parentElement.parentElement.children[1].className = "listItem-left_active"
     }
   })
   return (
     <div className='channelBar'>
-      <Link href='/channels/@me'>
         <div className='listItem'>
-            <div className="channelIcon_effect">
-              <div onClick={e => selectActiveServer(e)} className='channelIcon' id='channelBar_homepage'>
+          <div className="channelIcon_effect">
+              <div onClick={e => selectActiveServer(e, '/channels/@me')} className='channelIcon' id='channelBar_homepage'>
                 <svg
                   style={{ display: 'flex', justifyContent: 'center'}}
                   width='28'
@@ -48,34 +55,34 @@ const ChannelBar = () => {
                   ></path>
                 </svg>
               </div>
-            </div>
+          </div>
           <div className="listItem-left"/>
         </div>
-      </Link>
 
       <div className='listItem'>
         <div className='seperator'></div>
       </div>
       <div aria-label='Servers'>
-        <Link href='/channels/1'>
-          <div className='listItem'>
-              <div className="channelIcon_effect">
-                <div onClick={e => selectActiveServer(e)} className='channelIcon' id="channelBar_channel_1">BİHL</div>
-              </div>
-            <div className="listItem-left"/>
+        <div className='listItem'>
+          <div className="channelIcon_effect">
+            <Link href='/channels/1'>
+              <div onClick={e => selectActiveServer(e)} className='channelIcon' id="channelBar_channel_1">BİHL</div>
+            </Link>
+
           </div>
-        </Link>
-        <Link href='/channels/2'>
-          <div className='listItem'>
-            <div className="channelIcon_effect">
+          <div className="listItem-left"/>
+        </div>
+        <div className='listItem'>
+          <div className="channelIcon_effect">
+            <Link href='/channels/2'>
               <div onClick={e => selectActiveServer(e)} className='channelIcon' id="channelBar_channel_2">BİHL</div>
-            </div>
-            <div className="listItem-left"/>
+            </Link>
           </div>
-        </Link>
-        <Link href='/channels/3'>
-          <div className='listItem'>
-            <div className="channelIcon_effect">
+          <div className="listItem-left"/>
+        </div>
+        <div className='listItem'>
+          <div className="channelIcon_effect">
+            <Link href='/channels/3'>
               <img
                 onClick={e => selectActiveServer(e)}
                 className='channelIcon'
@@ -86,10 +93,10 @@ const ChannelBar = () => {
                 height='48'
                 aria-hidden='true'
               />
-            </div>
-            <div className="listItem-left"/>
+            </Link>
           </div>
-        </Link>
+          <div className="listItem-left"/>
+        </div>
       </div>
       <div className='listItem'>
         <div className="channelIcon_effect">

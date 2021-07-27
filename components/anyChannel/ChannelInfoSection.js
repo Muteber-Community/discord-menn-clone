@@ -2,7 +2,7 @@ import React from 'react';
 
 function ChannelInfoSection({setDisplay, display}) {
   const displayComponent = (e) => {
-    if (display == true) {
+    if (!display) {
       e.target.className.baseVal = "infoSection_icon_active"
     } else {
       e.target.className.baseVal = "infoSection_icon"
