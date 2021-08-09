@@ -3,7 +3,7 @@ Here is Discord Frontend Clone. It's almost similar to discord (animations, tran
 
 -Friends Chat Section
 
-![@mefriend](https://user-images.githubusercontent.com/75330445/128720863-63f0effd-1231-4ef9-afdc-3b9e19f55259.PNG)
+![@mefriend](https://user-images.githubusercontent.com/75330445/128724707-67c8f651-f4c9-4cbd-8bef-a4383a4602e6.PNG)
 
 -Homepage
 
